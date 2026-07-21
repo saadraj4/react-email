@@ -9,8 +9,8 @@
   "sideEffects": false,
   "types": "./dist/index.d.mts",
   "scripts": {
-    "build": "tsdown",
-    "build:watch": "tsdown --watch src",
+    "build": "node init && tsdown",
+    "build:watch": "node init && tsdown --watch src",
     "clean": "rm -rf dist",
     "test": "vitest run",
     "test:e2e": "vitest run --config vitest.e2e.config.ts",

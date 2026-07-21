@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "email-dev build",
-    "dev": "email-dev dev",
-    "start": "email-dev start",
+    "build": "node init && email-dev build",
+    "dev": "node init && email-dev dev",
+    "start": "node init && email-dev start",
     "export": "email-dev export"
   },
   "dependencies": {

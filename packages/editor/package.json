@@ -76,9 +76,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsdown",
-    "build:css": "tsx scripts/copy-css.ts",
-    "build:watch": "tsdown --watch",
+    "build": "node init && tsdown",
+    "build:css": "node init && tsx scripts/copy-css.ts",
+    "build:watch": "node init && tsdown --watch",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

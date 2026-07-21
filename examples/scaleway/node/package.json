@@ -9,8 +9,8 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsdown src/index.tsx --format esm --target node20",
-    "dev": "tsdown src/index.tsx --format esm --target node20 --watch"
+    "build": "node init && tsdown src/index.tsx --format esm --target node20",
+    "dev": "node init && tsdown src/index.tsx --format esm --target node20 --watch"
   },
   "dependencies": {
     "@scaleway/sdk": "1.42.0",

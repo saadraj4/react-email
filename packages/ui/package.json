@@ -3,11 +3,11 @@
   "version": "6.9.0",
   "description": "A live preview of your emails right in your browser.",
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" tsx ./scripts/build.mts",
+    "build": "node init && cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" tsx ./scripts/build.mts",
     "caniemail:fetch": "tsx ./scripts/fill-caniemail-data.mts",
     "clean": "rimraf dist",
-    "dev": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" tsx ./scripts/dev.mts",
-    "dev:seed": "tsx ./scripts/seed.mts",
+    "dev": "node init && cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" tsx ./scripts/dev.mts",
+    "dev:seed": "node init && tsx ./scripts/seed.mts",
     "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" vitest run",
     "test:watch": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --disable-warning=ExperimentalWarning\" vitest"
   },

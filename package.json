@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build": "node init && turbo run build",
     "canary:enter": "changeset pre enter canary",
     "canary:exit": "changeset pre exit",
     "lint": "biome check",

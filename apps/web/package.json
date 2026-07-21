@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
     "typecheck": "tsc --noEmit",
-    "start": "next start",
+    "start": "node init && next start",
     "test:watch": "vitest --bail 1",
     "test": "vitest run --bail 1",
     "components:dev": "email-dev dev -d ./components",
